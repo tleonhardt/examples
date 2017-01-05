@@ -2,6 +2,11 @@
 For those desiring to use setuptools with Cython
 ================================================
 
+NOTE as of Jan 2017:
+Setuptools appears to work fine with Cython now.  Ignore everything below ...
+
+
+
 Note that the ``Cython.Build.cythonize()`` utility creates plain,
 non-monkey-patched ``distutils.Extension`` objects.  These do not work out of
 the box with setuptools, due to various (some would say perfidious)
