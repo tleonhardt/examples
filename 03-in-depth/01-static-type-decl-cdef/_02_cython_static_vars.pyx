@@ -6,7 +6,7 @@ def dummy_func():
     j = 0
     i = j
     k = 12.0
-    j = 2 * k
+    j = 2 * int(k)
     assert i != j
 
 def several_at_once():
