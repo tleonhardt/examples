@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-pytest unit test file for RNG Cython code
+pytest unit test file for templated_funcs.pyx
 """
 import templated_funcs as tf
 
