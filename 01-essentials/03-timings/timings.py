@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from timeit import repeat
 from subprocess import check_output
 

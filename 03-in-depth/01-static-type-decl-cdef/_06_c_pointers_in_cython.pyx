@@ -16,13 +16,13 @@ def reference_dereference():
     p_double = &golden_ratio
     p_double[0] = 1.618
 
-    print golden_ratio
+    print(golden_ratio)
     # => 1.618
 
-    print p_double[0]
+    print(p_double[0])
     # => 1.618
 
-    print deref(p_double)
+    print(deref(p_double))
     # => 1.618
 
 cdef struct st_t:

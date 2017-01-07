@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # The Computer Language Benchmarks Game
 # http://benchmarksgame.alioth.debian.org/
 #

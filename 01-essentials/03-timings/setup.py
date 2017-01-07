@@ -1,4 +1,4 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 from Cython.Build import cythonize
 
 exts = ([Extension("cfib", sources=["cfib.c", "cfib_wrap.c"])] +
