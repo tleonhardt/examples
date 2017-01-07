@@ -16,11 +16,11 @@ cdef extern from "mt19937.h" namespace "mtrandom":
         double genrand_real1()
         double operator()()
 
-def make_random_list(unsigned long seed, unsigned int len):
-    cdef list randlist = [0] * len
+def make_random_list(unsigned long seed, unsigned int leng):
+    cdef list randlist = [0] * leng
     cdef MT_RNG rng  # calls default ctor.
     cdef unsigned int i
     rng.init_genrand(seed)
-    for i in range(len):
+    for i in range(leng):
         randlist[i] = rng.genrand_int32()
     return randlist
