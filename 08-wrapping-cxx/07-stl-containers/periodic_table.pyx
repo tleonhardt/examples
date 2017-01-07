@@ -10,7 +10,7 @@ def foobar():
     return cpp_strings
 
 def periodic_table_orig():
-    """Demonstrates the manual way to build up a 
+    """Demonstrates the manual way to build up a
     std::map in Cython.
     """
     cdef map[string, int] table
@@ -21,13 +21,13 @@ def periodic_table_orig():
     # Insert Helium
     entry.first = b"He"; entry.second = 2
     table.insert(entry)
-    # ...
+    return table
 
 
 def periodic_table():
     cdef map[string, long] table
-    # NOTE: the following used to be supported in earlier versions of Cython,
-    # but is now not supported.  
-    # table = {b"H": 1, b"He": 2, b"Li": 3}
+    # NOTE: You can auto-convert from dictionary to map, but need a Python object, not literal
+    table_dict = {b"H": 1, b"He": 2, b"Li": 3}
+    table = table_dict
     # ...use table in C++...
-    # return table
+    return table
